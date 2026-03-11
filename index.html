@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitkart Cafe And Restaurant | Fresh & Affordable in New Delhi</title>
+    <meta name="description" content="Welcome to Fitkart Cafe And Restaurant in Mayur Vihar Phase III, New Delhi. Perfect for students, families, and friends. Open until 10:30 PM.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Fitkart <span>Cafe</span></a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/919650939167" target="_blank" class="btn-nav"><i class="fab fa-whatsapp"></i> Order</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero slide-up">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <div class="hero-text-box">
+                    <span class="badge"><i class="fas fa-star"></i> 5.0 Rating (100+ Reviews)</span>
+                    <h1 class="hero-title">Welcome to Fitkart Cafe And Restaurant</h1>
+                    <h2 class="hero-subtitle">Fresh, Tasty & Affordable</h2>
+                    <p class="hero-desc">Experience the best cozy cafe atmosphere in New Delhi. ₹1–200 per person.</p>
+                    
+                    <div class="features-list">
+                        <span class="feature-item"><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+                        <span class="feature-item"><i class="fas fa-child"></i> Kids Menu</span>
+                        <span class="feature-item"><i class="fas fa-music"></i> Live Music</span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">View Menu</a>
+                        <a href="https://wa.me/919650939167" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+                        <a href="#contact" class="btn btn-outline">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Dishes Section -->
+        <section class="popular-dishes fade-in">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading">Customer Favorites</span>
+                    <h2>Popular Dishes</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="dishes-grid">
+                    <div class="dish-card">
+                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Club Sandwich" class="dish-img">
+                        <div class="dish-info">
+                            <h3>Classic Club Sandwich</h3>
+                            <p>Fresh veggies, cheese, and our special sauce.</p>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Italian Salad" class="dish-img">
+                        <div class="dish-info">
+                            <h3>Fresh Italian Salad</h3>
+                            <p>Healthy, crisp greens with olive oil dressing.</p>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Burger" class="dish-img">
+                        <div class="dish-info">
+                            <h3>Signature Burger</h3>
+                            <p>Juicy patty with fresh lettuce and secret spices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section bg-cream fade-in">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading">Discover</span>
+                    <h2>Our Menu</h2>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Delicious, freshly prepared dishes at unbeatable prices (₹1–200).</p>
+                </div>
+
+                <!-- Menu Categories (Tabs could be implemented in JS, for now we list them) -->
+                <div class="menu-categories" id="menuCategories">
+                    <button class="menu-tab active" data-target="all">All</button>
+                    <button class="menu-tab" data-target="sandwiches">Sandwiches</button>
+                    <button class="menu-tab" data-target="salads">Italian Salad</button>
+                    <button class="menu-tab" data-target="fastfood">Fast Food</button>
+                    <button class="menu-tab" data-target="snacks">Snacks</button>
+                    <button class="menu-tab" data-target="beverages">Beverages</button>
+                </div>
+
+                <div class="menu-grid" id="menuGrid">
+                    <!-- Sandwiches -->
+                    <div class="menu-item" data-category="sandwiches">
+                        <img src="https://images.unsplash.com/photo-1592415499556-74fcb7f18667?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Grilled Sandwich">
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3>Grilled Veg Sandwich</h3>
+                                <span class="price">₹70</span>
+                            </div>
+                            <p>Crispy grilled bread with fresh veggies and cheese.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="sandwiches">
+                        <img src="https://images.unsplash.com/photo-1550507992-eb63ffee0224?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Cheese Corn Sandwich">
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3>Cheese Corn Sandwich</h3>
+                                <span class="price">₹90</span>
+                            </div>
+                            <p>Creamy sweet corn mixed with melted cheese.</p>
+                        </div>
+                    </div>
+
+                    <!-- Salads -->
+                    <div class="menu-item" data-category="salads">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Italian Salad">
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3>Classic Italian Salad</h3>
+                                <span class="price">₹120</span>
+                            </div>
+                            <p>Mixed greens, cherry tomatoes, olives, vinaigrette.</p>
+                        </div>
+                    </div>
+
+                     <div class="menu-item" data-category="salads">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipMF6AW7rcOfWVl4n5XrR5KcblN0EjrcaXAxruMG=s1360-w1360-h1020-rw" alt="Italian Salad">
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3>Fresh Garden Salad With Paneer</h3>
+                                <span class="price">₹160</span>
+                            </div>
+                            <p>Mixed greens, cherry tomatoes, olives, vinaigrette, paneer.</p>
+                        </div>
+                    </div>
+
+                    <!-- Fast Food -->
+                    <div class="menu-item" data-category="fastfood">
+                        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Aloo Tikki Burger">
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3>Fitkart Special Burger</h3>
+                                <span class="price">₹85</span>
+                            </div>
+                            <p>Spicy potato patty with lots of cheese and veggies.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="fastfood">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Pizza">
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3>Veggie Delight Pizza</h3>
+                                <span class="price">₹180</span>
+                            </div>
+                            <p>Personal size pizza with bell peppers, onions, and corn.</p>
+                        </div>
+                    </div>
+
+                    <!-- Snacks -->
+                    <div class="menu-item" data-category="snacks">
+                        <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="French Fries">
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3>Peri Peri Fries</h3>
+                                <span class="price">₹65</span>
+                            </div>
+                            <p>Crispy golden fries tossed in spicy peri peri mix.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Beverages -->
+                    <div class="menu-item" data-category="beverages">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Cold Coffee">
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3>Thick Cold Coffee</h3>
+                                <span class="price">₹80</span>
+                            </div>
+                            <p>Creamy blended cold coffee with vanilla ice cream.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="beverages">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Mojito">
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3>Virgin Mojito</h3>
+                                <span class="price">₹90</span>
+                            </div>
+                            <p>Refreshing blend of mint, lime, and soda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="https://wa.me/919650939167" target="_blank" class="btn btn-primary">Download Full Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section fade-in">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <span class="subheading">Our Story</span>
+                        <h2>The Fitkart Cafe Experience</h2>
+                        <div class="divider"></div>
+                        <p>Welcome to Fitkart Cafe And Restaurant, a friendly local cafe dedicated to serving fresh, delicious, and affordable food in the heart of New Delhi. We believe that good food shouldn't be expensive, which is why everything on our menu is priced delightfully between ₹1 and ₹200.</p>
+                        <p>Whether you're a student looking for a cozy study spot, a family enjoying a weekend treat, or friends catching up over cold coffee, our warm ambiance makes everyone feel at home.</p>
+                        <ul class="about-features">
+                            <li><i class="fas fa-check-circle"></i> Perfect for Students, Families & Friends</li>
+                            <li><i class="fas fa-check-circle"></i> 100% Fresh Ingredients Daily</li>
+                            <li><i class="fas fa-check-circle"></i> Exceptional 5-Star Customer Service</li>
+                        </ul>
+                    </div>
+                    <div class="about-images">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cafe Interior" class="about-img main-img">
+                        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Coffee Brewing" class="about-img float-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section bg-cream fade-in">
+            <div class="container text-center">
+                <span class="subheading">Testimonials</span>
+                <h2>What Our Customers Say</h2>
+                <div class="divider"></div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Had a tortilla wrap and honestly loved it. Fresh ingredients, high protein, and the tortilla was perfectly grilled. Tasted great without feeling heavy or greasy. Filling, clean, and exactly what you want if you’re eating healthy but still want real flavor. Would definitely order this again."</p>
+                        <h4 class="reviewer">- Tarun Desai</h4>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"The meals were delivered fresh everyday and the packaging was excellent—everything stayed cool and organized. The variety was impressive.The customer service was also top-notch. And the best part for some limited time they are offreing free smoothies."</p>
+                        <h4 class="reviewer">- Tushar thakur</h4>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"FitCart is the perfect spot for healthy and tasty meals. Loved their salads, wraps, and sandwiches – fresh, flavorful, and with proper lab-tested nutrition details. Highly recommended!"</p>
+                        <h4 class="reviewer">- Shubham 10th B</h4>
+                    </div>
+                </div>
+                <div class="cta-banner">
+                    <h3>Ready to experience the taste?</h3>
+                    <a href="#contact" class="btn btn-primary">Visit Us Today</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section fade-in">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading">Moments</span>
+                    <h2>Our Gallery</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="gallery-grid">
+                    <a href="#" class="gallery-item"><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery Image 1" loading="lazy"></a>
+                    <a href="#" class="gallery-item"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery Image 2" loading="lazy"></a>
+                    <a href="#" class="gallery-item"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery Image 3" loading="lazy"></a>
+                    <a href="#" class="gallery-item"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery Image 4" loading="lazy"></a>
+                    <a href="#" class="gallery-item"><img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery Image 5" loading="lazy"></a>
+                    <a href="#" class="gallery-item"><img src="https://images.unsplash.com/photo-1588657731737-1473faec413b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery Image 6" loading="lazy"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section fade-in">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading">Get in Touch</span>
+                    <h2>Contact & Location</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h3>Visit Us</h3>
+                                <p>6-A, near Jaiswal Photostate, Pocket A 2, Mayur Vihar Phase III, Gharoli, New Delhi, India</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h3>Opening Hours</h3>
+                                <p>Monday - Sunday<br>Open until 10:30 PM</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h3>Call or WhatsApp</h3>
+                                <p><a href="tel:+919650939167">+91 96509 39167</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="https://wa.me/919650939167" target="_blank" class="social-icon whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <!-- Embedded Google Maps -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.822839446864!2d77.3276856111162!3d28.605090184400732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce50f8c0500d1%3A0xa11c4711af34c9c8!2sPocket%20A%202%2C%20Mayur%20Vihar%20Phase%20III%2C%20Gharoli%2C%20Delhi%2C%20110096!5e0!3m2!1sen!2sin!4v1709112234567!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <a href="#home" class="logo footer-logo">Fitkart <span>Cafe</span></a>
+            <p class="footer-desc">Serving fresh, tasty, and affordable food with love.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About Us</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2026 Fitkart Cafe And Restaurant. All Rights Reserved. Designed with Love.</p>
+        </div>
+    </footer>
+
+    <!-- Fixed WhatsApp Widget for mobile/desktop -->
+    <a href="https://wa.me/919650939167" class="whatsapp-float bg-green" target="_blank" aria-label="Order on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
