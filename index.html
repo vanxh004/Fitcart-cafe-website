@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitkart Cafe And Restaurant | Fresh & Affordable in New Delhi</title>
-    <meta name="description" content="Welcome to Fitkart Cafe And Restaurant in Mayur Vihar Phase III, New Delhi. Perfect for students, families, and friends. Open until 10:30 PM.">
+    <meta name="description"
+        content="Welcome to Fitkart Cafe And Restaurant in Mayur Vihar Phase III, New Delhi. Perfect for students, families, and friends. Open until 10:30 PM.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="#home" class="logo">Fitkart <span>Cafe</span></a>
-            
+
             <nav class="nav-links" id="navLinks">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#menu" class="nav-link">Menu</a>
@@ -29,7 +34,10 @@
             </nav>
 
             <div class="nav-actions">
-                <a href="https://wa.me/919650939167" target="_blank" class="btn-nav"><i class="fab fa-whatsapp"></i> Order</a>
+                <button class="btn-nav cart-toggle-btn" id="cartToggleBtn">
+                    <i class="fas fa-shopping-cart"></i> Cart 
+                    <span class="cart-badge" id="cartBadge" style="background: white; color: var(--primary-orange); border-radius: 50%; padding: 0.1rem 0.4rem; font-size: 0.8rem; margin-left: 0.3rem; display: none;">0</span>
+                </button>
                 <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -47,7 +55,7 @@
                     <h1 class="hero-title">Welcome to Fitkart Cafe And Restaurant</h1>
                     <h2 class="hero-subtitle">Fresh, Tasty & Affordable</h2>
                     <p class="hero-desc">Experience the best cozy cafe atmosphere in New Delhi. ₹1–200 per person.</p>
-                    
+
                     <div class="features-list">
                         <span class="feature-item"><i class="fas fa-wifi"></i> Free Wi-Fi</span>
                         <span class="feature-item"><i class="fas fa-child"></i> Kids Menu</span>
@@ -56,7 +64,8 @@
 
                     <div class="hero-buttons">
                         <a href="#menu" class="btn btn-primary">View Menu</a>
-                        <a href="https://wa.me/919650939167" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+                        <a href="https://wa.me/919650939167" target="_blank" class="btn btn-whatsapp"><i
+                                class="fab fa-whatsapp"></i> Order on WhatsApp</a>
                         <a href="#contact" class="btn btn-outline">Get Directions</a>
                     </div>
                 </div>
@@ -73,21 +82,24 @@
                 </div>
                 <div class="dishes-grid">
                     <div class="dish-card">
-                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Club Sandwich" class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Club Sandwich" class="dish-img">
                         <div class="dish-info">
                             <h3>Classic Club Sandwich</h3>
                             <p>Fresh veggies, cheese, and our special sauce.</p>
                         </div>
                     </div>
                     <div class="dish-card">
-                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Italian Salad" class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Italian Salad" class="dish-img">
                         <div class="dish-info">
                             <h3>Fresh Italian Salad</h3>
                             <p>Healthy, crisp greens with olive oil dressing.</p>
                         </div>
                     </div>
                     <div class="dish-card">
-                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Burger" class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Burger" class="dish-img">
                         <div class="dish-info">
                             <h3>Signature Burger</h3>
                             <p>Juicy patty with fresh lettuce and secret spices.</p>
@@ -115,107 +127,156 @@
                     <button class="menu-tab" data-target="fastfood">Fast Food</button>
                     <button class="menu-tab" data-target="snacks">Snacks</button>
                     <button class="menu-tab" data-target="beverages">Beverages</button>
+                    <button class="menu-tab" data-target="noodles">Noodles</button>
                 </div>
 
                 <div class="menu-grid" id="menuGrid">
                     <!-- Sandwiches -->
                     <div class="menu-item" data-category="sandwiches">
-                        <img src="https://images.unsplash.com/photo-1592415499556-74fcb7f18667?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Grilled Sandwich">
+                        <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2014/01/grilled-sandwich-1.jpg"
+                            alt="Grilled Sandwich">
                         <div class="menu-item-details">
                             <div class="menu-item-header">
                                 <h3>Grilled Veg Sandwich</h3>
                                 <span class="price">₹70</span>
                             </div>
                             <p>Crispy grilled bread with fresh veggies and cheese.</p>
+                            <button class="btn btn-primary btn-add-cart" data-name="Grilled Veg Sandwich" data-price="70" data-img="https://images.unsplash.com/photo-1592415499556-74fcb7f18667?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" style="padding: 0.4rem 1rem; font-size: 0.9rem; margin-top: 0.8rem; width: 100%;">Add to Cart</button>
                         </div>
                     </div>
                     <div class="menu-item" data-category="sandwiches">
-                        <img src="https://images.unsplash.com/photo-1550507992-eb63ffee0224?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Cheese Corn Sandwich">
+                        <img src="https://static.toiimg.com/thumb/57853896.cms?imgsize=1542881&width=800&height=800"
+                            alt="Cheese Corn Sandwich">
                         <div class="menu-item-details">
                             <div class="menu-item-header">
                                 <h3>Cheese Corn Sandwich</h3>
                                 <span class="price">₹90</span>
                             </div>
                             <p>Creamy sweet corn mixed with melted cheese.</p>
+                            <button class="btn btn-primary btn-add-cart" data-name="Cheese Corn Sandwich" data-price="90" data-img="https://images.unsplash.com/photo-1550507992-eb63ffee0224?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" style="padding: 0.4rem 1rem; font-size: 0.9rem; margin-top: 0.8rem; width: 100%;">Add to Cart</button>
                         </div>
                     </div>
 
                     <!-- Salads -->
                     <div class="menu-item" data-category="salads">
-                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Italian Salad">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                            alt="Italian Salad">
                         <div class="menu-item-details">
                             <div class="menu-item-header">
                                 <h3>Classic Italian Salad</h3>
                                 <span class="price">₹120</span>
                             </div>
                             <p>Mixed greens, cherry tomatoes, olives, vinaigrette.</p>
+                            <button class="btn btn-primary btn-add-cart" data-name="Classic Italian Salad" data-price="120" data-img="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" style="padding: 0.4rem 1rem; font-size: 0.9rem; margin-top: 0.8rem; width: 100%;">Add to Cart</button>
                         </div>
+                        
                     </div>
 
-                     <div class="menu-item" data-category="salads">
-                        <img src="https://lh3.googleusercontent.com/p/AF1QipMF6AW7rcOfWVl4n5XrR5KcblN0EjrcaXAxruMG=s1360-w1360-h1020-rw" alt="Italian Salad">
+                    <div class="menu-item" data-category="salads">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipMF6AW7rcOfWVl4n5XrR5KcblN0EjrcaXAxruMG=s1360-w1360-h1020-rw"
+                            alt="Italian Salad">
                         <div class="menu-item-details">
                             <div class="menu-item-header">
                                 <h3>Fresh Garden Salad With Paneer</h3>
                                 <span class="price">₹160</span>
                             </div>
                             <p>Mixed greens, cherry tomatoes, olives, vinaigrette, paneer.</p>
+                            <button class="btn btn-primary btn-add-cart" data-name="Fresh Garden Salad With Paneer" data-price="160" data-img="https://lh3.googleusercontent.com/p/AF1QipMF6AW7rcOfWVl4n5XrR5KcblN0EjrcaXAxruMG=s1360-w1360-h1020-rw" style="padding: 0.4rem 1rem; font-size: 0.9rem; margin-top: 0.8rem; width: 100%;">Add to Cart</button>
                         </div>
                     </div>
 
                     <!-- Fast Food -->
                     <div class="menu-item" data-category="fastfood">
-                        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Aloo Tikki Burger">
+                        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                            alt="Aloo Tikki Burger">
                         <div class="menu-item-details">
                             <div class="menu-item-header">
                                 <h3>Fitkart Special Burger</h3>
                                 <span class="price">₹85</span>
                             </div>
                             <p>Spicy potato patty with lots of cheese and veggies.</p>
+                            <button class="btn btn-primary btn-add-cart" data-name="Fitkart Special Burger" data-price="85" data-img="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" style="padding: 0.4rem 1rem; font-size: 0.9rem; margin-top: 0.8rem; width: 100%;">Add to Cart</button>
                         </div>
                     </div>
                     <div class="menu-item" data-category="fastfood">
-                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Pizza">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                            alt="Pizza">
                         <div class="menu-item-details">
                             <div class="menu-item-header">
                                 <h3>Veggie Delight Pizza</h3>
                                 <span class="price">₹180</span>
                             </div>
                             <p>Personal size pizza with bell peppers, onions, and corn.</p>
+                            <button class="btn btn-primary btn-add-cart" data-name="Veggie Delight Pizza" data-price="180" data-img="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" style="padding: 0.4rem 1rem; font-size: 0.9rem; margin-top: 0.8rem; width: 100%;">Add to Cart</button>
                         </div>
                     </div>
 
                     <!-- Snacks -->
                     <div class="menu-item" data-category="snacks">
-                        <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="French Fries">
+                        <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                            alt="French Fries">
                         <div class="menu-item-details">
                             <div class="menu-item-header">
                                 <h3>Peri Peri Fries</h3>
                                 <span class="price">₹65</span>
                             </div>
                             <p>Crispy golden fries tossed in spicy peri peri mix.</p>
+                            <button class="btn btn-primary btn-add-cart" data-name="Peri Peri Fries" data-price="65" data-img="https://images.unsplash.com/photo-1576107232684-1279f390859f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" style="padding: 0.4rem 1rem; font-size: 0.9rem; margin-top: 0.8rem; width: 100%;">Add to Cart</button>
                         </div>
                     </div>
+
+                    <!-- Noodles -->
+
+                     <div class="menu-item" data-category="noodles">
+                        <img src="https://www.ohmyveg.co.uk/wp-content/uploads/2024/08/hakka-noodles.jpg"
+                            alt="Veg Hakka Noodles">
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3>Veg Hakka Noodles</h3>
+                                <span class="price">₹150</span>
+                            </div>
+                            <p>Noodles tossed with fresh vegetables and our special sauce</p>
+                            <button class="btn btn-primary btn-add-cart" data-name="Veg Hakka Noodles" data-price="150" data-img="https://www.ohmyveg.co.uk/wp-content/uploads/2024/08/hakka-noodles.jpg" style="padding: 0.4rem 1rem; font-size: 0.9rem; margin-top: 0.8rem; width: 100%;">Add to Cart</button>
+                        </div>
+                    </div>
+
                     
+                     <div class="menu-item" data-category="noodles">
+                        <img src="https://tiffycooks.com/wp-content/uploads/2021/09/Screen-Shot-2021-09-21-at-5.21.37-PM.png"
+                            alt="Soy sauce pan-fried Noodles">
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3>Soy sauce pan-fried Noodles</h3>
+                                <span class="price">₹120</span>
+                            </div>
+                            <p>Noodles tossed with fresh vegetables and our special sauce</p>
+                            <button class="btn btn-primary btn-add-cart" data-name="Soy sauce pan-fried Noodles" data-price="120" data-img="https://tiffycooks.com/wp-content/uploads/2021/09/Screen-Shot-2021-09-21-at-5.21.37-PM.png" style="padding: 0.4rem 1rem; font-size: 0.9rem; margin-top: 0.8rem; width: 100%;">Add to Cart</button>
+                        </div>
+                    </div>
+
                     <!-- Beverages -->
                     <div class="menu-item" data-category="beverages">
-                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Cold Coffee">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                            alt="Cold Coffee">
                         <div class="menu-item-details">
                             <div class="menu-item-header">
                                 <h3>Thick Cold Coffee</h3>
                                 <span class="price">₹80</span>
                             </div>
                             <p>Creamy blended cold coffee with vanilla ice cream.</p>
+                            <button class="btn btn-primary btn-add-cart" data-name="Thick Cold Coffee" data-price="80" data-img="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" style="padding: 0.4rem 1rem; font-size: 0.9rem; margin-top: 0.8rem; width: 100%;">Add to Cart</button>
                         </div>
                     </div>
                     <div class="menu-item" data-category="beverages">
-                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Mojito">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                            alt="Mojito">
                         <div class="menu-item-details">
                             <div class="menu-item-header">
                                 <h3>Virgin Mojito</h3>
                                 <span class="price">₹90</span>
                             </div>
                             <p>Refreshing blend of mint, lime, and soda.</p>
+                            <button class="btn btn-primary btn-add-cart" data-name="Virgin Mojito" data-price="90" data-img="https://images.unsplash.com/photo-1544145945-f90425340c7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" style="padding: 0.4rem 1rem; font-size: 0.9rem; margin-top: 0.8rem; width: 100%;">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -234,8 +295,12 @@
                         <span class="subheading">Our Story</span>
                         <h2>The Fitkart Cafe Experience</h2>
                         <div class="divider"></div>
-                        <p>Welcome to Fitkart Cafe And Restaurant, a friendly local cafe dedicated to serving fresh, delicious, and affordable food in the heart of New Delhi. We believe that good food shouldn't be expensive, which is why everything on our menu is priced delightfully between ₹1 and ₹200.</p>
-                        <p>Whether you're a student looking for a cozy study spot, a family enjoying a weekend treat, or friends catching up over cold coffee, our warm ambiance makes everyone feel at home.</p>
+                        <p>Welcome to Fitkart Cafe And Restaurant, a friendly local cafe dedicated to serving fresh,
+                            delicious, and affordable food in the heart of New Delhi. We believe that good food
+                            shouldn't be expensive, which is why everything on our menu is priced delightfully between
+                            ₹1 and ₹200.</p>
+                        <p>Whether you're a student looking for a cozy study spot, a family enjoying a weekend treat, or
+                            friends catching up over cold coffee, our warm ambiance makes everyone feel at home.</p>
                         <ul class="about-features">
                             <li><i class="fas fa-check-circle"></i> Perfect for Students, Families & Friends</li>
                             <li><i class="fas fa-check-circle"></i> 100% Fresh Ingredients Daily</li>
@@ -243,8 +308,10 @@
                         </ul>
                     </div>
                     <div class="about-images">
-                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cafe Interior" class="about-img main-img">
-                        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Coffee Brewing" class="about-img float-img">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Cafe Interior" class="about-img main-img">
+                        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Coffee Brewing" class="about-img float-img">
                     </div>
                 </div>
             </div>
@@ -259,23 +326,34 @@
                 <div class="reviews-grid">
                     <div class="review-card">
                         <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <p class="review-text">"Had a tortilla wrap and honestly loved it. Fresh ingredients, high protein, and the tortilla was perfectly grilled. Tasted great without feeling heavy or greasy. Filling, clean, and exactly what you want if you’re eating healthy but still want real flavor. Would definitely order this again."</p>
+                        <p class="review-text">"Had a tortilla wrap and honestly loved it. Fresh ingredients, high
+                            protein, and the tortilla was perfectly grilled. Tasted great without feeling heavy or
+                            greasy. Filling, clean, and exactly what you want if you’re eating healthy but still want
+                            real flavor. Would definitely order this again."</p>
                         <h4 class="reviewer">- Tarun Desai</h4>
                     </div>
                     <div class="review-card">
                         <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <p class="review-text">"The meals were delivered fresh everyday and the packaging was excellent—everything stayed cool and organized. The variety was impressive.The customer service was also top-notch. And the best part for some limited time they are offreing free smoothies."</p>
+                        <p class="review-text">"The meals were delivered fresh everyday and the packaging was
+                            excellent—everything stayed cool and organized. The variety was impressive.The customer
+                            service was also top-notch. And the best part for some limited time they are offreing free
+                            smoothies."</p>
                         <h4 class="reviewer">- Tushar thakur</h4>
                     </div>
                     <div class="review-card">
                         <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <p class="review-text">"FitCart is the perfect spot for healthy and tasty meals. Loved their salads, wraps, and sandwiches – fresh, flavorful, and with proper lab-tested nutrition details. Highly recommended!"</p>
+                        <p class="review-text">"FitCart is the perfect spot for healthy and tasty meals. Loved their
+                            salads, wraps, and sandwiches – fresh, flavorful, and with proper lab-tested nutrition
+                            details. Highly recommended!"</p>
                         <h4 class="reviewer">- Shubham 10th B</h4>
                     </div>
                 </div>
@@ -295,12 +373,24 @@
                     <div class="divider"></div>
                 </div>
                 <div class="gallery-grid">
-                    <a href="#" class="gallery-item"><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery Image 1" loading="lazy"></a>
-                    <a href="#" class="gallery-item"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery Image 2" loading="lazy"></a>
-                    <a href="#" class="gallery-item"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery Image 3" loading="lazy"></a>
-                    <a href="#" class="gallery-item"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery Image 4" loading="lazy"></a>
-                    <a href="#" class="gallery-item"><img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery Image 5" loading="lazy"></a>
-                    <a href="#" class="gallery-item"><img src="https://images.unsplash.com/photo-1588657731737-1473faec413b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery Image 6" loading="lazy"></a>
+                    <a href="#" class="gallery-item"><img
+                            src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Gallery Image 1" loading="lazy"></a>
+                    <a href="#" class="gallery-item"><img
+                            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Gallery Image 2" loading="lazy"></a>
+                    <a href="#" class="gallery-item"><img
+                            src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Gallery Image 3" loading="lazy"></a>
+                    <a href="#" class="gallery-item"><img
+                            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Gallery Image 4" loading="lazy"></a>
+                    <a href="#" class="gallery-item"><img
+                            src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Gallery Image 5" loading="lazy"></a>
+                    <a href="#" class="gallery-item"><img
+                            src="https://images.unsplash.com/photo-1588657731737-1473faec413b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Gallery Image 6" loading="lazy"></a>
                 </div>
             </div>
         </section>
@@ -319,7 +409,8 @@
                             <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
                             <div>
                                 <h3>Visit Us</h3>
-                                <p>6-A, near Jaiswal Photostate, Pocket A 2, Mayur Vihar Phase III, Gharoli, New Delhi, India</p>
+                                <p>6-A, near Jaiswal Photostate, Pocket A 2, Mayur Vihar Phase III, Gharoli, New Delhi,
+                                    India</p>
                             </div>
                         </div>
                         <div class="info-card">
@@ -340,12 +431,16 @@
                             <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                             <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                             <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                            <a href="https://wa.me/919650939167" target="_blank" class="social-icon whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://wa.me/919650939167" target="_blank" class="social-icon whatsapp-icon"><i
+                                    class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                     <div class="contact-map">
                         <!-- Embedded Google Maps -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.822839446864!2d77.3276856111162!3d28.605090184400732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce50f8c0500d1%3A0xa11c4711af34c9c8!2sPocket%20A%202%2C%20Mayur%20Vihar%20Phase%20III%2C%20Gharoli%2C%20Delhi%2C%20110096!5e0!3m2!1sen!2sin!4v1709112234567!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.822839446864!2d77.3276856111162!3d28.605090184400732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce50f8c0500d1%3A0xa11c4711af34c9c8!2sPocket%20A%202%2C%20Mayur%20Vihar%20Phase%20III%2C%20Gharoli%2C%20Delhi%2C%20110096!5e0!3m2!1sen!2sin!4v1709112234567!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -372,8 +467,50 @@
     <a href="https://wa.me/919650939167" class="whatsapp-float bg-green" target="_blank" aria-label="Order on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
+    
+    <!-- Cart Sidebar Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
 
-    <!-- Custom JS -->
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Your Order</h2>
+            <button class="close-cart-btn" id="closeCartBtn"><i class="fas fa-times"></i></button>
+        </div>
+        
+        <div class="cart-items-container" id="cartItemsContainer">
+            <!-- Cart items will be injected here via JS -->
+            <div class="empty-cart-message">Your cart is empty</div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotalPrice">₹0</span>
+            </div>
+            
+            <form id="checkoutForm" class="checkout-form">
+                <h4>Checkout Details</h4>
+                <div class="form-group" style="margin-bottom: 0.8rem;">
+                    <input type="text" id="custName" placeholder="Your Name" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+                <div class="form-group" style="margin-bottom: 0.8rem;">
+                    <input type="tel" id="custPhone" placeholder="Phone Number" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+                <div class="form-group" style="margin-bottom: 0.8rem;">
+                    <textarea id="custAddress" placeholder="Delivery Address" rows="2" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; resize: none;"></textarea>
+                </div>
+                <div class="form-group" style="margin-bottom: 0.8rem;">
+                    <textarea id="custInstructions" placeholder="Special Instructions (Optional)" rows="1" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; resize: none;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-whatsapp w-100" style="width: 100%; margin-top: 10px; border: none; cursor: pointer; padding: 1rem;">
+                    <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
